@@ -2,4 +2,15 @@
   title: SSH Public Key
   description: Paste your SSH public key to access the virtual machine via SSH
   required: true
-
+- name: n8n_user
+  title: n8n Username
+  description: Username you will use to log in to n8n
+  required: false
+- name: n8n_password
+  title: n8n Password
+  description: Password you will use to log in to n8n - pick a strong one
+  required: true
+- name: n8n_timezone
+  title: n8n Timezone
+  description: Timezone for n8n scheduled workflows
+  required: false

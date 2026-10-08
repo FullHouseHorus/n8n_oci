@@ -130,6 +130,9 @@ resource "oci_core_instance" "n8n_instance" {
 
   metadata = {
     ssh_authorized_keys = var.ssh_public_key
+    n8n_user            = var.n8n_user
+    n8n_password        = var.n8n_password
+    n8n_timezone        = var.n8n_timezone
     user_data           = filebase64("${path.module}/../scripts/install_n8n.sh")
   }
 }
